@@ -17,11 +17,14 @@ mypy = "^1.8.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.mypy]
+strict = true
+
 [tool.ruff]
 lint.select = [
-  "C9",
-  "E",
-  "F",
-  "W",
-  "I",
+  "ALL"
+]
+lint.ignore = [
+  "D211", # 行数に関するD203と矛盾したルール
+  "D213" # 行数に関するD212と矛盾したルール
 ]
