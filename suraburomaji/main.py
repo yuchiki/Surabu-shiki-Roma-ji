@@ -5,5 +5,7 @@ text = "あらゆる現実を自分の方に捻じ曲げたのだ。"
 text2 = "hoge"
 data = wakati.parse(text)
 
-print(text)
-print(data)
+
+def main():
+    print(text)
+    print(data)
