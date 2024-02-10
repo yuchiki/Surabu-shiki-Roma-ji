@@ -24,3 +24,7 @@ strict = true
 lint.select = [
   "ALL"
 ]
+lint.ignore = [
+  "D211", # 行数に関するD203と矛盾したルール
+  "D213" # 行数に関するD212と矛盾したルール
+]
